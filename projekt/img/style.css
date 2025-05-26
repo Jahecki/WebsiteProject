@@ -1,0 +1,368 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#menu {
+  position: sticky;
+  top: 0px;
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: 50px;
+  z-index: 1000; /* Zapewnia, że menu będzie nad innymi elementami */
+}
+
+#menu .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#menu a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu .container .right {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu .container .left {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+#main {
+  margin: auto;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("img/elements/header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.srodek {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+}
+.btn-men{
+  display: inline-block;
+  
+  padding: 10px 15px;
+  background: color #000; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; 
+ 
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-men:hover {
+  background-color:gray; 
+}
+
+#main .srodek .lewo {
+  margin: auto;
+  width: 80%;
+  padding: 15px;
+  text-align: center;
+}
+#main .srodek .lewo a {
+  display: block;
+  text-align: right; /* Wyrównanie tekstu do prawej */
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00; /* złoty kolor */
+}
+#main .srodek .lewo h1 {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#main .srodek .prawo {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  text-align: center;
+}
+#main .srodek .prawo p {
+  font-size: 15px;
+  font-weight: 600;
+  margin: auto;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: 300px;
+  margin: auto 0;
+}
+#footer .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+#footer a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .container .right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+  max-width: 300px;
+  margin: auto;
+}
+#footer .container .right img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .container .left {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#footer .middle iframe {
+  max-height: 250px;
+  border-radius: 5%;
+}
+
+.srodek {
+  display: flex;
+}
+
+.onas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vmax;
+  min-height: 100vmax;
+  margin: auto;
+  background-image: url("img/elements/rozymte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.onas img {
+  display: block;
+
+  margin: 15px auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  justify-content: center;
+
+  transition: 1.2s;
+}
+
+.onas h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+.onas p {
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.onas button {
+  display: inline-block;
+
+  border: none;
+  border-radius: 40%;
+  background-color: burlywood;
+
+  padding: 10px;
+
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+button:hover {
+  background-color: rgb(191, 127, 255);
+  color: aliceblue;
+}
+
+.onas .a {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2px;
+  justify-items: space-between;
+  text-align: center;
+  margin: 0.5%;
+  width: 20%;
+  height: 800px;
+  background-color: #3a3a3a;
+  border-radius: 5%;
+  -webkit-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+}
+.onas img:hover {
+  rotate: 150deg;
+  transition: 1.2;
+}
+ 
+@media (max-width: 510px) {
+  /* MENU */
+  body {
+   
+    overflow-x: hidden;
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #menu {
+    height: 100%;
+  }
+  #menu .container {
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      text-align: center;
+      padding: 5px 0;
+      gap:6%;
+  }
+
+  #menu .container .right {
+      width: 100%;
+      justify-content: center;
+  }
+
+  #menu .container .left {
+      font-size: 1.1em;
+  }
+
+  /* SEKCJA MAIN */
+  #main {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      padding: 20px;
+      height: 100%;
+  }
+
+  .srodek {
+      flex-direction: column;
+      width: 100%;
+      height: 100vw;
+  }
+
+  #main .srodek .lewo h1 {
+      font-size: 20px;
+  }
+
+  #main .srodek .lewo a{
+      font-size: 15px; 
+  }
+  #main .srodek .prawo {
+      width: 100%;
+  }
+
+  /* PRZYCISKI */
+  .btn-men {
+      width: 90%;
+      text-align: center;
+      padding: 12px;
+  }
+
+  /* SEKCJA O NAS */
+  .onas {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .onas .a {
+      width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+      box-shadow: 8px 5px 16px 5px rgba(66, 68, 90, 0.8);
+  }
+
+  .onas img {
+      width: 120px;
+      height: 120px;
+  }
+
+  .onas h1 {
+      font-size: 24px;
+  }
+
+  .onas p {
+      font-size: 18px;
+  }
+
+
+#footer .container {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+#footer .container .right {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#footer .middle iframe {
+  max-width: 100%;
+  height: 150px;
+}
+
+#main {
+  flex-grow: 0; /* Zmniejsza main - nie rozciąga się */
+  min-height: 500px; /* Możesz dostosować minimalną wysokość */
+}
+
+#footer {
+  height:100%; /* Ustaw większą wysokość footera */
+  flex-shrink: 0; 
+  }}

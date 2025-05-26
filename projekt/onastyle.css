@@ -1,0 +1,448 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#menu {
+  position: sticky;
+  top: 0px;
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: 50px;
+  z-index: 1000; /* Zapewnia, że menu będzie nad innymi elementami */
+}
+
+#menu .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#menu a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu .container .right {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#menu .container .right a{
+  font-size: 15px;
+}
+#menu .container .left {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+
+#main {
+  margin: auto;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("img/elements/header.png");
+  background-repeat: no-repeat;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: 300px;
+  margin: auto 0;
+}
+#footer .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+#footer a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .container .right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+  max-width: 300px;
+  margin: auto;
+}
+#footer .container .right img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .container .left {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#footer .middle iframe {
+  max-height: 250px;
+  border-radius: 5%;
+}
+
+#main{
+  width: 100vmax;
+
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/elements/rozymte.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .tx {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items:left;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+ 
+
+
+}
+#main .tx h1{
+  font-size: 40px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left  ;
+  color: #fff;
+  align-items: flex-start;
+
+}
+#main .tx p{
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+#main .onas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vmax;
+  height: 100vmax;
+  margin: auto;
+  gap: 5px;
+
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.onas img {
+  display: block;
+
+  margin: 15px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-content: center;
+
+  transition: 1.2s;
+}
+
+.onas h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+.onas p {
+  text-align: center;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.onas button {
+  margin: 10%;
+  display: inline-block;
+  align-self: flex-end;
+  justify-content: center;
+  border: none;
+  border-radius: 40%;
+  background-color: burlywood;
+
+  padding: 10px;
+
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+button:hover {
+  background-color: rgb(191, 127, 255);
+  color: aliceblue;
+}
+
+.onas .a {
+  
+  justify-content: space-around;
+  justify-items: space-around;
+  text-align: center;
+  margin: 0.5%;
+  
+  width: 25%;
+  height: 500px;
+  background-color: #3a3a3a;
+  border-radius: 5%;
+  -webkit-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+}
+.onas img:hover {
+  rotate: 150deg;
+  transition: 1.2;
+}
+
+
+#ban {
+  justify-content: center;
+  width: 100vw;
+  height: 200px;
+  background-image: url("img/elements/header.png");
+  background-size: cover; /* Dopasuje do kontenera, wypełniając go */
+background-position: center; /* Wycentruje obraz */
+background-repeat: no-repeat;
+  
+  width: 100%;
+  margin: 0;
+    padding: 0;
+  text-align:right;
+}
+#ban a {
+  padding: 5px;
+  margin: 20px;
+  display: block;
+  text-align: right; 
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00; /* złoty kolor */
+}
+#ban  h1 {
+  padding: 20px;
+  margin: 20px;
+  margin: auto;
+  padding: auto;
+  text-align:right;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-men{
+  display: inline-block;
+  
+  padding: 10px 15px;
+  background: color #000; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; 
+ 
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-men:hover {
+  background-color:gray; 
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+@media (max-width: 510px) {
+  /* MENU */
+  #ban h1 {
+    font-size: 30px;
+
+  }
+  #ban a{
+
+    font-size: 20px;
+  }
+  
+  body {
+   
+    overflow-x: hidden;
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #menu {
+    height: 100%;
+  }
+  #menu .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0;
+    gap:6%;
+  }
+
+  #menu .container .right {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
+  /* SEKCJA MAIN */
+  #main {
+    flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      
+      height:100%;
+      width: 100vw;
+  }
+
+ 
+
+  /* PRZYCISKI */
+  .btn-men {
+      width: 90%;
+      text-align: center;
+      padding: 12px;
+  }
+#main .onas{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height:100%;
+  gap: 20px;
+}
+  /* SEKCJA O NAS */
+  .onas {
+    display: flex;
+      flex-direction: row;
+      justify-content: center;      
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      gap: 20px;
+      margin: auto;
+      
+  }
+
+  .onas .a {
+    display: inline-block;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+   
+    
+      width: 200px;
+      height: 300px;
+      
+      box-shadow: 8px 5px 16px 5px rgba(66, 68, 90, 0.8);
+  }
+
+  .onas img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .onas h1 {
+      font-size: 18px;
+  }
+
+  .onas p {
+      font-size: 10px;
+  }
+
+  .onas button {
+
+    margin: 10%;
+  display: inline-block;
+  align-self: flex-end;
+  justify-content: center;
+  }
+
+    #footer {
+      flex-grow: 0;
+      display:none;
+    }
+}

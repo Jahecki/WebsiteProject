@@ -1,0 +1,448 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#menu {
+    position: sticky;
+    top: 0px;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    height: 50px;
+    z-index: 1000; /* Zapewnia, że menu będzie nad innymi elementami */
+}
+
+#menu .container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#menu a:link,
+#menu a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu .container .right {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu .container .right a{
+    font-size: 15px;
+}
+#menu .container .left {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+#main {
+    margin: auto;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("img/elements/header.png");
+    background-repeat: no-repeat;
+  }
+  
+  #footer {
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    height: 300px;
+    margin: auto 0;
+  }
+  #footer .container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+  #footer a:link,
+  #menu a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #footer .container .right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
+    max-width: 300px;
+    margin: auto;
+  }
+  #footer .container .right img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #footer .container .left {
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #footer .middle iframe {
+    max-height: 250px;
+    border-radius: 5%;
+  }
+  
+  #main{
+    width: 100vmax;
+  
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/elements/rozymte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ 
+  }
+  
+  
+  
+  #ban {
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    background-image: url("img/elements/header.png");
+    background-size: cover; /* Dopasuje do kontenera, wypełniając go */
+  background-position: center; /* Wycentruje obraz */
+  background-repeat: no-repeat;
+    
+    width: 100%;
+    margin: 0;
+      padding: 0;
+    text-align:right;
+  }
+  #ban a {
+    padding: 5px;
+    margin: 20px;
+    display: block;
+    text-align: right; 
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* złoty kolor */
+  }
+  #ban  h1 {
+    padding: 20px;
+    margin: 20px;
+    margin: auto;
+    padding: auto;
+    text-align:right;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .btn-men{
+    display: inline-block;
+    
+    padding: 10px 15px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; 
+   
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .btn-men:hover {
+    background-color:gray; 
+  }
+  #main .right a:link,
+  #main .right a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #main .basic  {
+
+    display: flex;
+    background-color: #3a3a3a;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border-radius: 5%;
+    gap: 10px;
+    -webkit-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+    box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  }
+  #main .basic .tekscik{
+    font-size: 12px;
+    font-weight:30px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #main .basic img{
+    width:500px;
+    height:500px ;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius:5%;
+  }
+  #main .basic .tekscik a {
+    width: 15px;
+  }
+
+  /* From Uiverse.io by alexruix */ 
+.card {
+
+  width: 190px;
+  height: 254px;
+  padding: .8em;
+  background: #3a3a3a;
+  position: relative;
+  overflow: visible;
+  border-radius: 5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+  box-shadow: 16px 11px 32px 11px rgba(66, 68, 90, 1);
+ }
+ 
+ .card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+ .card-img img{
+  height: 100%;
+  width: 100%;
+  
+ }
+ 
+ .card-info {
+  padding-top: 10%;
+ }
+ 
+ svg {
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+ }
+ 
+ .text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+ }
+ 
+ /*Button*/
+ .card-button {
+  border: 1px solid #fff;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ .card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+ 
+ .card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6;
+ }
+ .inne {
+ margin: auto;
+  display: flex;
+     flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  height: 100%;}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+@media (max-width: 510px) {
+  /* MENU */
+  #ban h1 {
+    font-size: 30px;
+
+  }
+  #ban a{
+
+    font-size: 20px;
+  }
+  
+  body {
+   
+    overflow-x: hidden;
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+    #menu {
+        height: 100%;
+    }
+    #menu .container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 0;
+        gap:6%;
+    }
+
+    #menu .container .right {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* SEKCJA MAIN */
+  #main {
+    overflow-x: hidden;
+    flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      gap: 20px;
+      height:100%;
+      width: 100%;
+  }
+  #main .basic {
+    align-items: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    width:250px ;
+    height: 100%;
+  }
+  #main .basic p {
+    font-size: 12px;
+  }
+ 
+  #main .basic img {
+    width: 250px;
+    height: 250px;
+    align-self: flex-start;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius:0%;
+    border-top-left-radius: 5%;
+    border-top-right-radius:5%;
+  }
+  #main .inne {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto ;
+    gap: 20px;
+    padding: 7px;
+    
+  }
+  /* PRZYCISKI */
+  .btn-men {
+      width: 90%;
+      text-align: center;
+      padding: 12px;
+  }
+
+
+    #footer {
+      flex-grow: 0;
+      display:none;
+    }
+}

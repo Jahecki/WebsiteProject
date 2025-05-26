@@ -1,0 +1,475 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#menu {
+  position: sticky;
+  top: 0px;
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  height: 50px;
+  z-index: 1000; /* Zapewnia, że menu będzie nad innymi elementami */
+}
+
+#menu .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#menu a:link,
+#menu a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu .container .right {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#menu .container .right a{
+  font-size: 15px;
+}
+#menu .container .left {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+  
+  #main {
+    margin: auto;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("img/elements/header.png");
+    background-repeat: no-repeat;
+  }
+  
+  #footer {
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    height: 300px;
+    margin: auto 0;
+  }
+  #footer .container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+  #footer a:link,
+  #menu a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #footer .container .right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
+    max-width: 300px;
+    margin: auto;
+  }
+  #footer .container .right img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #footer .container .left {
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  #footer .middle iframe {
+    max-height: 250px;
+    border-radius: 5%;
+  }
+  
+  #main{
+    width: 100vmax;
+  
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/elements/rozymte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+ 
+  }
+  
+  
+  
+  #ban {
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    background-image: url("img/elements/header.png");
+    background-size: cover; /* Dopasuje do kontenera, wypełniając go */
+  background-position: center; /* Wycentruje obraz */
+  background-repeat: no-repeat;
+    
+    width: 100%;
+    margin: 0;
+      padding: 0;
+    text-align:right;
+  }
+  #ban a {
+    padding: 5px;
+    margin: 20px;
+    display: block;
+    text-align: right; 
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* złoty kolor */
+  }
+  #ban  h1 {
+    padding: 20px;
+    margin: 20px;
+    margin: auto;
+    padding: auto;
+    text-align:right;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  #main .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:top ;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    gap:10px;
+  }
+  #main .top h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    
+    
+  }
+  #main .top p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+
+  #main .bot p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+  #main .middle p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+  #main .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    overflow-wrap: break-word;
+  }
+  #main .middle img {
+    width: 300px;
+    height: 330px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+  }
+  #main .middle p{
+
+    overflow-wrap: break-word;
+  }
+  #main .middle .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    gap: 30px;
+    font-size: small;
+  }
+  #main .bot {
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    overflow-wrap: break-word;
+  
+  }
+
+  #main {
+    justify-content: space-around;
+  }
+  #main .middle .btn{
+    display:inline-block;
+    
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .link-container {
+    display: flex;  
+    gap: 10px;    
+    justify-content: center; 
+    margin-top: 20px;
+}
+  .btn {
+    display:inline-block;
+   
+    padding: 10px 20px;
+    background: color #000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.btn-men{
+  display: inline-block;
+  
+  padding: 10px 15px;
+  background: color #000; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px; 
+ 
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn-men:hover {
+  background-color:gray; 
+}
+  .btn:hover {
+    background-color:gray; 
+  }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+  @media (max-width: 510px) {
+    /* MENU */
+    #ban h1 {
+      font-size: 30px;
+  
+    }
+    #ban a{
+  
+      font-size: 20px;
+    }
+    
+    body {
+     
+      overflow-x: hidden;
+      
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    #menu {
+      height: 100%;
+    }
+    #menu .container {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      text-align: center;
+      padding: 5px 0;
+      gap:6%;
+    }
+
+    #menu .container .right {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+
+    /* SEKCJA MAIN */
+    #main {
+      flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        
+        height:100%;
+        width: 100vw;
+    }
+    #main .top {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      margin: auto;
+      padding: 10px;
+    }
+    #main .top h1 {
+      font-size: 20px;
+      
+    }
+   #main .top .middle .bot p  {
+    font-size: 5px;
+   }
+   
+   #main .middle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap:20px;
+    padding: 10px;
+
+   }
+   #main .middle img {
+    height: 200px;
+    width: 200px;
+    display: block;
+   }
+   #main .midlle .right p {
+    font-size: 10px;
+   }
+
+   #main .bot {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   }
+   
+  
+    /* PRZYCISKI */
+    .btn-men {
+        width: 90%;
+        text-align: center;
+        padding: 12px;
+    }
+
+  
+      #footer {
+        flex-grow: 0;
+        display:none;
+      }
+
+      #main .top .middle .bot h1 p{
+        text-align: center;
+        justify-content: center;
+      }
+      #main .bot p{
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+      }
+      #main .middle p {
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+      }
+      #main .top p {
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;  
+      }
+      #main .top h1 {
+        text-align: center;
+
+      }
+  }
