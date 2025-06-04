@@ -1,6 +1,6 @@
 <?php
- $servername = "eduweb.pwste.edu.pl";
-$username = "s41158";
+ $servername = "";
+$username = "";
 $password="";
 $dbname="aplijk";
 
